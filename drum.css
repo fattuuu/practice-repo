@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+body {
+  font-family: Russo One;
+}
+
+body {
+  user-select: none;
+  background-color: #c0c0c0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-container {
+  outline: 0px solid rgb(230, 230, 230);
+  position: relative;
+  width: 660px;
+  text-align: center;
+  background-color: #d9dcd6;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #bdbcbc;
+  padding: 10px;
+}
+.inner-container .pad-bank {
+  width: 332px;
+  height: 272px;
+  display: inline-block;
+  margin: 20px;
+}
+.inner-container .pad-bank .drum-pad {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select{
+    width: 50px;
+    height: 25px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.select .inner{
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: left 0.3s ease;
+}
+
+.select.active .inner{
+    left: 27px;
+}
+.inner-container .logo .inner-logo {
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.inner-container .controls-container {
+  width: 240px;
+  height: 272px;
+  display: inline-block;
+  margin: 40px 20px 0 10px;
+  vertical-align: top;
+}
+.inner-container .controls-container .control {
+  width: 100px;
+  margin: auto;
+}
+.inner-container .controls-container .control p {
+  margin-bottom: 0;
+}
+.inner-container .controls-container #display {
+  width: 200px;
+  background-color: #abc4ff;
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.drum-pad{
+    background-color:#5c677d;
+    margin-top: 10px;
+    box-shadow: 4px;
+    border-radius: 5px;
+}
+
+
+.inner-container .controls-container .control .select {
+  margin: auto;
+  border: 1px solid rgb(12, 31, 56);
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color:#1b4965;
+  border-radius: 25px;
+}
+
+
+.inner-container .controls-container .control .select .inner {
+  width: 23px;
+  height: 19px;
+  background: #d81159;
+  border: 1px solid rgb(27, 44, 66);
+  border-radius: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
+  }
+}
